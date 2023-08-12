@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 720px;
+    margin: 10px auto;
+}
+
+.form {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #029a8c;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.result {
+    background-color: #eee;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.result .task{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 3px #eee dashed;
+}
+
+.result .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+span {
+    color: #029a8c;
+    font-weight: bold;
+    
+}
