@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering:optimizeLegibility ;
+    -webkit-font-smoothing: grayscale; 
+    -moz-text-size-adjust: none;
+}
+
+h1,
+.muted {
+    color: #2c3e5099;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#app {
+    max-width: 30em;
+    margin: 1em auto;
+}

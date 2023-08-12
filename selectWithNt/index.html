@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="/selectWithNt/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+      <h1>NT Select</h1>
+      <v-select :options="books" label="title">
+        <template v-slot:option="option">
+            <span :class="option.icon"></span>
+            {{ option.title}}
+        </template>
+      </v-select>
+    </div>
+</body>
+</html>
