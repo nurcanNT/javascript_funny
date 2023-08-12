@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="/selectWithNt/script.js"></script>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plain JavaScript Select Example</title>
 </head>
 <body>
-    <div id="app">
-      <h1>NT Select</h1>
-      <v-select :options="books" label="title">
-        <template v-slot:option="option">
-            <span :class="option.icon"></span>
-            {{ option.title}}
-        </template>
-      </v-select>
-    </div>
+    <div class="page">
+    <h1>Select Example</h1>
+    <select id="bookSelect">
+        <option value="HTML5 Books">HTML5 Books</option>
+        <option value="The Lock Artist">The Lock Artist</option>
+        <option value="The Man's War">The Man's War</option>
+        <option value="Thank You Jeeves">Thank You Jeeves</option>
+    </select>
+    <p>Selected book: <span id="selectedBook"></span></p>
+
+    <script src="script.js"></script>
+</div>
 </body>
 </html>

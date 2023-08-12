@@ -3,6 +3,7 @@ body {
     text-rendering:optimizeLegibility ;
     -webkit-font-smoothing: grayscale; 
     -moz-text-size-adjust: none;
+     background-color: bisque;
 }
 
 h1,
@@ -11,11 +12,25 @@ h1,
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 36px;
     font-weight: 600;
 }
+p {
+    font-weight: 600;
+}
+.page{
+    display: grid;
+    place-items: center;
+    height: 20vh;
+}
 
-#app {
+#bookSelect {
+    padding: 5px;
     max-width: 30em;
     margin: 1em auto;
+    background-color:gainsboro;
+    font-size: 20px;
+    overflow-y: scroll;
+    cursor:pointer;
+    border: 1px solid #ccc ;    
 }
