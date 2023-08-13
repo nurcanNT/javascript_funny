@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Validation and Word Counrt</title>
+</head>
+<body>
+   <h2>Age Validation and Word Count</h2> 
+   <label for="password">Age:</label>
+   <input type="text" id="age" onblur="validateAge()">
+   <p id="ageError" style="color: red;"></p>
+   <label for="description">Description:</label>
+   <textarea id="description" cols="50" rows="4"></textarea>
+    <button onclick="countWords()">Count Words</button>
+    <p id="wordCount"></p>
+</body>
+</html>
