@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Validation and Word Counrt</title>
+    <script>
+        function validateAge() {
+            var ageInput = document.getElementById(`age`);
+            var ageValue = parseInt(ageInput.value);
+
+            var ageError = document.getElementById(`ageError`);
+
+            if (isNaN(ageValue) || ageValue <= 18) {
+                ageError.textContent = `Age must be greater than 18`;
+            }else {
+                ageError.textContent = ``;
+            }
+        }
+
+        function countWords(){
+            var descriptionInput = document.getElementById(`description`);
+            var words = descriptionInput.value.split(/\s+/).filter(function(word){
+                return word.lenght > 0;
+        });
+    </script>
 </head>
 <body>
    <h2>Age Validation and Word Count</h2> 
