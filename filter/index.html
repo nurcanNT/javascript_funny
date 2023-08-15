@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Filter Gallery</h1>
+        <hr>
+        <h2>Image filters</h2>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection(`all`)">Show All</button>
+            <button class="btn" onclick="filterSelection(`normal`)">Normal</button>
+            <button class="btn" onclick="filterSelection(`invert`)">Invert</button>
+            <button class="btn" onclick="filterSelection(`brightness`)">Brightness</button>
+            <button class="btn" onclick="filterSelection(`sepia`)">Sepia</button>
+            <button class="btn" onclick="filterSelection(`contrast`)">Contrast</button>
+            <button class="btn" onclick="filterSelection(`grayscale`)">Grayscale</button>
+            <button class="btn" onclick="filterSelection(`saturate`)">Saturate</button>
+            <button class="btn" onclick="filterSelection(`blur`)">Blur</button>
+            <button class="btn" onclick="filterSelection(`drop-shadow`)">Drop Shadow</button>
+        </div>
+        <!--portfolio gallery grid-->
+        <div class="row">
+            <div class="column normal">
+                <div class="content">
+                    <img src="https://iili.io/HDNtfHv.jpg" alt="orijinal" style="width: 100%;">
+                    <h4>No filter orijinal</h4>
+                </div>
+            </div>
+            <div class="column invert">
+                <div class="content">
+                    <img class="filter-invert" src="https://iili.io/HDNtfHv.jpg" alt="invert" style="width: 100%;">
+                    <h4>Invert</h4>
+                </div>
+            </div>
+            <div class="column sepia">
+                <div class="content">
+                    <img class="filter-sepia" src="https://iili.io/HDNtfHv.jpg" alt="Sepia" style="width: 100%;">
+                    <h4>Sepia</h4>
+                </div>
+            </div>
+            <div class="colum contrast">
+                <div class="content">
+                    <img src="https://iili.io/HDNtfHv.jpg" alt="Contrast" style="width:100%;" class="filter-contrast">
+                    <h4>Contrast</h4>
+                </div>
+            </div>
+            <div class="column grayscale">
+                <div class="content">
+                    <img src="https://iili.io/HDNtfHv.jpg" alt="Grayscale" style="width: 100%;" class="filter-grayscale">
+                    <h4>Grayscale</h4>
+                </div>
+            </div>
+            <div class="column-saturate">
+                <div class="content">
+                    <img src="https://iili.io/HDNtfHv.jpg" alt="saturate" style="width: 100%;" class="filter-saturate">
+                    <h4>Saturate</h4>
+                </div>
+            </div>
+            <div class="column blur">
+                <div class="content">
+                    <img src="https://iili.io/HDNtfHv.jpg" alt="Blur" style="width: 100%;" class="filter-blur">
+                    <h4>Blur</h4>
+                </div>
+            </div>
+            <div class="column drop-shadow">
+                <div class="content">
+                    <img src="https://iili.io/HDNtfHv.jpg" alt="drop-shadow" style="width: 100%;" class="filter-drop-shadow">
+                    <h4>Drop Shadow</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
