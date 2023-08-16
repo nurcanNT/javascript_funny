@@ -1,0 +1,68 @@
+:root {
+    --filter-brightness:2.4;
+    --filter-contrast: 1.1;
+    --filter-hue-rotate: 168deg;
+    --filter-opacity: 1;
+    --color: #111;
+}
+
+.ImageContainer img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.ImageContainer::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: brightness(var(--filter-brightness)) contrast(var(--filter-contrast)) hue-rotate(var(--filter-hue-rotate));
+    opacity: var(--filter-opacity);
+    transition: opacity 2.5s linear;
+}
+
+/*other styles*/
+#Clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    color: var(--color);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 5px #fff;
+    transition: color 2.5s;
+}
+label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    cursor: pointer;
+    color: var(--color);
+    font-size: 1.7rem;
+    transition: 2.5s;
+}
+input {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
