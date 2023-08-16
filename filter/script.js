@@ -5,11 +5,11 @@ function filterSelection(c){
     x = document.getElementsByClassName("column");
     if ( c == "all"){
         for (i = 0; i< x.length; i++){
-            x[i].computedStyleMap.display = "block";
+            x[i].style.display = "block";
         }
     }else {
         for(i = 0; i< x.length; i++) {
-            x[i].computedStyleMap.display = "none";
+            x[i].style.display = "none";
         }
     var selected = document.getElementsByClassName(c);
     for (i = 0; i<selected.length; i++){
