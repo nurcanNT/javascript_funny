@@ -1,4 +1,4 @@
-import * as SunCalc from "https://cdn.skypack.dev/suncalc@1.9.0";
+import * as SunCalc from 'https://cdn.skypack.dev/suncalc-tz';
 
 const r = document.querySelector(':root');
 const clockElement = document.getElementById('Clock');
@@ -30,7 +30,7 @@ function getPrecision(value, min, max) {
 }
 
 //fetch the geographical coordinates of the user
-navigatır.geolocation.getCurrentPosition((position) => {
+navigator.geolocation.getCurrentPosition((position) => {
     const {latitude, longitude}= position.coords;
 
     //use UseCalc to Calculate Sunrise Time
@@ -38,7 +38,7 @@ navigatır.geolocation.getCurrentPosition((position) => {
     const now = new Date();
     const times = SunCalc.getTimes(new Date(), latitude, longitude);
     const sunrise = new Date(times.sunrise);
-    const sunset = new Date(time.sunset);
+    const sunset = new Date(times.sunset);
     const delayTime = 30 * 60 * 1000; 
     const sunriseStart = new Date(sunrise.getTime() - delayTime);
     const sunriseEnd = new Date(sunrise.getTime()+delayTime);
