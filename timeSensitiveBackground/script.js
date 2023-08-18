@@ -1,4 +1,4 @@
-import * as SunCalc from 'https://cdn.skypack.dev/suncalc-tz';
+import * as SunCalc from  "https://cdn.skypack.dev/suncalc@1.9.0";
 
 const r = document.querySelector(':root');
 const clockElement = document.getElementById('Clock');
