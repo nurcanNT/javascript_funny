@@ -1,25 +1,90 @@
-.body{
+.body {
     background-color: #444857;
-}
-
-.matrix-mode {
+  }
+  
+  .matrix-mode {
     position: relative;
     border: 2px solid #e74c3c;
     transition: transform 0.3s ease-in-out;
-}
-
-.glitch-container {
+  }
+  
+  .glitch-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow:hidden;
-}
-
-.glitch-layer{
+    overflow: hidden;
+  }
+  
+  .glitch-layer {
     width: 100%;
     height: 100%;
     mix-blend-mode: difference;
     animation: glitch 1s infinite;
-}
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-5px, 5px);
+    }
+    50% {
+      transform: translate(5px, -5px);
+    }
+    75% {
+      transform: translate(5px, 5px);
+    }
+    100% {
+      transform: translate(-5px, -5px);
+    }
+  }
+  
+  .image-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    overflow-y: auto;
+    border-radius: 10px;
+    height: 200rem;
+  }
+  
+  
+  .selectable-image {
+    height: 100%;
+    width: 100%;
+    max-width: 420px;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .selectable-image:hover {
+    border-color: #3498db;
+  }
+  
+  .selected {
+    border-color: #e74c3c;
+  }
+  
+  .main-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+  }
+  
+  #main-image {
+    color: white;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid white;
+  }
+  
