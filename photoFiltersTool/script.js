@@ -4,14 +4,7 @@ const toggleMatrixModeButton = document.getElementById("toggle-matrix-mode");
 const imageListContainer = document.querySelector(".image-list");
 
 const imageUrls = [
-  "https://images.unsplash.com/photo-1692003133023-ff78f41813f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
-  "https://images.unsplash.com/photo-1691610876953-8b20fee3352d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
-  "https://images.unsplash.com/photo-1690844625344-6a3a791b8e11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
-    "https://images.unsplash.com/photo-1692171295305-e84a1d62a842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
-    "https://images.unsplash.com/photo-1691435006749-c9485d527d44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
-  "https://images.unsplash.com/photo-1691860664006-b1ef531c8743?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=700&q=60",
-  "https://images.unsplash.com/photo-1691737301531-cdc02df0410b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=700&q=60",
-  "https://images.unsplash.com/photo-1692085450034-3e7b05de83ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+  
 ];
 let selectedImage = null;
 let matrixMode = false;
@@ -50,23 +43,6 @@ const matrixTransformations = [
 
 let currentMatrixIndex = 0;  
 
-// matrix mode button 
-// toggleMatrixModeButton.addEventListener("click", () => {
-//   matrixMode = !matrixMode;
-//   if (matrixMode) {
-//     // applyMatrixTransformation();
-//     mainImage.classList.add("matrix-mode");
-//     createGlitchEffect();
-//     toggleMatrixModeButton.className = "btn btn-success";
-//   } else {
-//     mainImage.style.filter = "none";
-//     mainImage.style.transform = "none";
-//     mainImage.classList.remove("matrix-mode");
-//     applyFilters();
-//     removeGlitchEffect();
-//     toggleMatrixModeButton.className = "btn btn-secondary";
-//   }
-// });
 
 // matrix transformation
 function applyMatrixTransformation() {
