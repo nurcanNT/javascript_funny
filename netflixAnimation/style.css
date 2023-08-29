@@ -16,8 +16,10 @@ body {
     background-color: #000000; /* veya istediğiniz renk değeri */
     overflow: hidden;
   }
-  
-	
+  :root {
+    --bg-color: #000000;
+    --base-color: #e40913;
+  }
 	netflixintro{
 		display: block;
 		position: relative;
@@ -35,7 +37,7 @@ body {
 			content: "";
 			position: absolute;
 			display: block;
-			background-color: $bg-color;
+            background-color: var(--bg-color);
 			width: 150%;
 			height: 30%;
 			left: -25%;
@@ -51,7 +53,7 @@ body {
 			.helper-1{
 				width: 19.5%;
 				height: 100%;
-				background-color: rgba($base-color, .5);
+				background-color: rgba(--base-color, .5); 
 				left: 22.4%;
 				top: 0;
 				transform: rotate(180deg);
@@ -99,7 +101,7 @@ body {
 			.helper-1{
 				width: 19.5%;
 				height: 100%;
-				background-color: rgba($base-color, .5);
+				background-color: rgba(--base-color, .5);
 				left: 22%;
 				top: 0;
 				transform: rotate(180deg);
@@ -141,9 +143,10 @@ body {
 				animation-delay: 1s;
 				.effect-brush{
 					animation-name: brush-moving
-					animation-duration: 2s
-					animation-fill-mode: forwards
-					animation-delay: .6s;}}
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					animation-delay: .6s;
+                }
 			.helper-4{
 				width: 17.5%
 				height: 50%
@@ -157,13 +160,13 @@ body {
 					animation-fill-mode: forwards
 					animation-delay: .4s
 					animation-delay: .5s
-            }
+            }}
 		&[letter="T"]
 			transform-origin: center center
 			.helper-1
 				width: 19.5%
 				height: 100%
-				background-color: rgba($base-color, .5)
+				background-color: rgba(var(--bg-color), .5)
 				left: 38%
 				top: 0
 				transform: rotate(180deg)
@@ -198,7 +201,7 @@ body {
 			.helper-1
 				width: 19.5%
 				height: 100%
-				background-color: rgba($base-color, .5)
+				background-color: rgba(var(--bg-color), .5)
 				left: 22%
 				top: 0
 				transform: rotate(180deg)
@@ -250,7 +253,7 @@ body {
 			.helper-1
 				width: 19.5%
 				height: 100%
-				background-color: rgba($base-color, .5)
+				background-color: rgba(var(--bg-color), .5)
 				left: 22%
 				top: 0
 				transform: rotate(180deg)
@@ -284,7 +287,7 @@ body {
 			.helper-1
 				width: 19.5%
 				height: 100%
-				background-color: rgba($base-color, .5)
+				background-color: rgba(var(--bg-color), .5)
 				left: 38%
 				top: 0
 				transform: rotate(180deg)
@@ -347,10 +350,10 @@ body {
 					display: block
 					content: ""
 					position: absolute
-					background-color: $base-color
+                    --base-color: #e40913;
 					width: 100%
 					height: 70%
-					box-shadow: 0px 0px 29px 24px $base-color
+					box-shadow: 0px 0px 29px 24px var(--base-color)
 				
 				[class*="fur-"]
 					display: block
@@ -361,127 +364,127 @@ body {
 				.fur-1
 					left: 0%
 					width: 3.8%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 15%, rgba(0, 0, 0, 0) 81%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%, var(--bg-color) 15%, rgba(0, 0, 0, 0) 81%, rgba(0, 0, 0, 0) 100%)
 				.fur-2
 					left: 3.8%
 					width: 2.8%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 10%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%, var(--bg-color) 10%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0) 100%)
 				.fur-3
 					left: 6.6%
 					width: 4.8%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 37%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%, var(--bg-color) 37%, rgba(0, 0, 0, 0) 100%)
 				.fur-4
 					left: 11.4%
 					width: 4%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 23%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%, var(--bg-color) 23%, rgba(0, 0, 0, 0) 100%)
 				.fur-5
 					left: 15.4%
 					width: 4%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 15%, rgba(0, 0, 0, 0) 86%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%, var(--bg-color) 15%, rgba(0, 0, 0, 0) 86%, rgba(0, 0, 0, 0) 100%)
 				.fur-6
 					left: 19.4%
 					width: 2.5%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 27%, rgba(0, 0, 0, 0) 89%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%,var(--base-color) 27%, rgba(0, 0, 0, 0) 89%, rgba(0, 0, 0, 0) 100%)
 				.fur-7
 					left: 21.9%
 					width: 4%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 20%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%, var(--base-color) 20%, rgba(0, 0, 0, 0) 100%)
 				.fur-8
 					left: 25.9%
 					width: 2%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 30%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom, var(--base-color) 0%,  var(--base-color) 30%, rgba(0, 0, 0, 0) 100%)
 				.fur-9
 					left: 27.9%
 					width: 4%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 35%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 35%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
 				.fur-10
 					left: 31.9%
 					width: 3.5%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
 				.fur-11
 					left: 35.4%
 					width: 2%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 34%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 34%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
 				.fur-12
 					left: 37.4%
 					width: 2.6%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 22%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 22%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
 				.fur-13
 					left: 40%
 					width: 6%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 47%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 47%, rgba(0, 0, 0, 0) 100%)
 				.fur-14
 					left: 46%
 					width: 2%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 36%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 36%, rgba(0, 0, 0, 0) 100%)
 				.fur-15
 					left: 48%
 					width: 5.5%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 29%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 29%, rgba(0, 0, 0, 0) 100%)
 				.fur-16
 					left: 53.5%
 					width: 3%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
 				.fur-17
 					left: 56.5%
 					width: 4.1%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 45%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 45%, rgba(0, 0, 0, 0) 100%)
 				.fur-18
 					left: 60.6%
 					width: 2.4%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 34%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 34%, rgba(0, 0, 0, 0) 100%)
 				.fur-19
 					left: 63%
 					width: 4%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 47%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 47%, rgba(0, 0, 0, 0) 100%)
 				.fur-20
 					left: 67%
 					width: 1.5%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 27%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 27%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)
 				.fur-21
 					left: 68.5%
 					width: 2.8%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 37%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 37%, rgba(0, 0, 0, 0) 100%)
 				.fur-22
 					left: 71.3%
 					width: 2.3%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 9%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 9%, rgba(0, 0, 0, 0) 100%)
 				.fur-23
 					left: 73.6%
 					width: 2.2%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 28%, rgba(0, 0, 0, 0) 92%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 28%, rgba(0, 0, 0, 0) 92%, rgba(0, 0, 0, 0) 100%)
 				.fur-24
 					left: 75.8%
 					width: 1%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 37%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 37%, rgba(0, 0, 0, 0) 100%)
 				.fur-25
 					left: 76.8%
 					width: 2.1%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 28%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 28%, rgba(0, 0, 0, 0) 100%)
 				.fur-26
 					left: 78.9%
 					width: 4.1%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 34%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 34%, rgba(0, 0, 0, 0) 100%)
 				.fur-27
 					left: 83%
 					width: 2.5%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 21%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 21%, rgba(0, 0, 0, 0) 100%)
 				.fur-28
 					left: 85.5%
 					width: 4.5%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 39%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 39%, rgba(0, 0, 0, 0) 100%)
 				.fur-29
 					left: 90%
 					width: 2.8%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 30%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 30%, rgba(0, 0, 0, 0) 100%)
 				.fur-30
 					left: 92.8%
 					width: 3.5%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 19%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 19%, rgba(0, 0, 0, 0) 100%)
 				.fur-31
 					left: 96.3%
 					width: 3.7%
-					background: linear-gradient(to bottom, $base-color 0%, $base-color 37%, rgba(0, 0, 0, 0) 100%)
+					background: linear-gradient(to bottom,  var(--base-color) 0%,  var(--base-color) 37%, rgba(0, 0, 0, 0) 100%)
 
 			.effect-lumieres
 				position: absolute
@@ -497,7 +500,7 @@ body {
 					position: absolute
 					display: block
 					height: 100%
-					box-shadow: 0px 0px 10px 0px rgba($base-color, 0.75)
+					box-shadow: 0px 0px 10px 0px rgba( var(--base-color), 0.75)
 					background: var(--color)
 
 					&::before
@@ -507,7 +510,7 @@ body {
 						width: 100%
 						height: 100%
 						background: var(--color)
-						box-shadow: 0px 0px 10px 0px rgba($base-color, 0.75)
+						box-shadow: 0px 0px 10px 0px rgba( var(--base-color), 0.75)
 
 				.lamp-1
 					--color: #ff0100
