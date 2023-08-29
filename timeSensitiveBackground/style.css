@@ -5,7 +5,12 @@
     --filter-opacity: 1;
     --color: #111;
 }
-
+:root {
+    --color: #111;
+    --filter-brightness: 2.4;
+    --filter-hue-rotate: 168deg;
+    --filter-opacity: 1;
+  }
 .ImageContainer img {
     position: absolute;
     top: 50%;
@@ -21,7 +26,7 @@
     inset: 0;
     backdrop-filter: brightness(var(--filter-brightness)) contrast(var(--filter-contrast)) hue-rotate(var(--filter-hue-rotate));
     opacity: var(--filter-opacity);
-    transition: opacity 2.5s linear;
+    transition: opacity 1.5s linear, backdrop-filter 3.5s linear;
 }
 
 /*other styles*/
