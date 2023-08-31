@@ -148,139 +148,159 @@ body {
 					animation-delay: .6s;
                 }
 			.helper-4{
-				width: 17.5%
-				height: 50%
-				left: 38%
-				top: 196px
-				transform: rotate(270deg)
-				overflow: hidden
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2s
-					animation-fill-mode: forwards
-					animation-delay: .4s
-					animation-delay: .5s
+				width: 17.5%;
+				height: 50%;
+				left: 38%;
+				top: 196px;
+				transform: rotate(270deg);
+				overflow: hidden;
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					animation-delay: .4s;
+					animation-delay: .5s;
+				}
             }}
-		&[letter="T"]
-			transform-origin: center center
-			.helper-1
-				width: 19.5%
-				height: 100%
-				background-color: rgba(var(--bg-color), .5)
-				left: 38%
-				top: 0
-				transform: rotate(180deg)
-				animation-name: fading-lumieres-box
-				animation-duration: 2s
-				animation-delay: .6s
-				animation-fill-mode: forwards
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2.5s
-					animation-fill-mode: forwards
-					animation-delay: 1s
-					[class*="fur-"]
-						bottom: 0
-						height: 40%
-			.helper-2
-				width: 17.5%
-				height: 54%
-				left: 39%
-				top: -55px
-				transform: rotate(270deg)
-				overflow: hidden
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2s
-					animation-fill-mode: forwards
-					animation-delay: .5s
+		&[letter="T"]{
+			transform-origin: center center;
+			.helper-1{
+				width: 19.5%;
+				height: 100%;
+				background-color: rgba(var(--bg-color), .5);
+				left: 38%;
+				top: 0;
+				transform: rotate(180deg);
+				animation-name: fading-lumieres-box;
+				animation-duration: 2s;
+				animation-delay: .6s;
+				animation-fill-mode: forwards;
+			}
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2.5s;
+					animation-fill-mode: forwards;
+					animation-delay: 1s;
+					[class*="fur-"]{
+						bottom: 0;
+						height: 40%;
+					}}
+			.helper-2{
+				width: 17.5%;
+				height: 54%;
+				left: 39%;
+				top: -55px;
+				transform: rotate(270deg);
+				overflow: hidden;
+			}
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					animation-delay: .5s;
+				}
 
 
-		&[letter="F"]
-			transform-origin: 30% center
-			.helper-1
-				width: 19.5%
-				height: 100%
-				background-color: rgba(var(--bg-color), .5)
-				left: 22%
-				top: 0
-				transform: rotate(180deg)
-				animation-name: fading-lumieres-box
-				animation-duration: 2s
-				animation-delay: .6s
-				animation-fill-mode: forwards
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2.5s
-					animation-fill-mode: forwards
-					animation-delay: 1.2s
-					[class*="fur-"]
-						bottom: 0
-						height: 40%
-			.helper-2
-				width: 17.5%
-				height: 50%
-				left: 38%
-				top: -49px
-				transform: rotate(270deg)
-				overflow: hidden
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2s
-					animation-fill-mode: forwards
-					animation-delay: .7s
-			.helper-3
-				width: 17%
-				height: 39%
-				left: 33%
-				top: 29%
-				transform: rotate(-90deg)
-				box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.4)
-				overflow: hidden
-				animation-name: fading-out
-				animation-duration: 2s
-				animation-fill-mode: forwards
-				animation-delay: 1s
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2s
-					animation-fill-mode: forwards
-					animation-delay: .5s
+		&[letter="F"]{
+			transform-origin: 30% center;
+			.helper-1{
+				width: 19.5%;
+				height: 100%;
+				background-color: rgba(var(--bg-color), .5);
+				left: 22%;
+				top: 0;
+				transform: rotate(180deg);
+				animation-name: fading-lumieres-box;
+				animation-duration: 2s;
+				animation-delay: .6s;
+				animation-fill-mode: forwards;
+			}
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2.5s;
+					animation-fill-mode: forwards;
+					animation-delay: 1.2s;
+				}
+					[class*="fur-"]{
+						bottom: 0;
+						height: 40%;
+					}
+			.helper-2{
+				width: 17.5%;
+				height: 50%;
+				left: 38%;
+				top: -49px;
+				transform: rotate(270deg);
+				overflow: hidden;
+			}
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					animation-delay: .7s;
+				}
+		}
+			.helper-3{
+				width: 17%;
+				height: 39%;
+				left: 33%;
+				top: 29%;
+				transform: rotate(-90deg);
+				box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.4);
+				overflow: hidden;
+				animation-name: fading-out;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+				animation-delay: 1s;
+			}
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					animation-delay: .5s;
+				}
+		}
 
 
-		&[letter="L"]
-			transform-origin: 30% center
-			.helper-1
-				width: 19.5%
-				height: 100%
-				background-color: rgba(var(--bg-color), .5)
-				left: 22%
-				top: 0
-				transform: rotate(180deg)
-				animation-name: fading-lumieres-box
-				animation-duration: 2s
-				animation-delay: .6s
-				animation-fill-mode: forwards
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2.5s
-					animation-fill-mode: forwards
-					animation-delay: .8s
-					[class*="fur-"]
-						bottom: 0
-						height: 40%
-			.helper-2
-				width: 17.5%
-				height: 50%
-				left: 38%
-				top: 196px
-				transform: rotate(270deg)
-				overflow: hidden
-				.effect-brush
-					animation-name: brush-moving
-					animation-duration: 2s
-					animation-fill-mode: forwards
-					animation-delay: .4s
+		&[letter="L"]{
+			transform-origin: 30% center;
+			.helper-1{
+				width: 19.5%;
+				height: 100%;
+				background-color: rgba(var(--bg-color), .5);
+				left: 22%;
+				top: 0;
+				transform: rotate(180deg);
+				animation-name: fading-lumieres-box;
+				animation-duration: 2s;
+				animation-delay: .6s;
+				animation-fill-mode: forwards;
+			}
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2.5s;
+					animation-fill-mode: forwards;
+					animation-delay: .8s;
+				}
+					[class*="fur-"]{
+						bottom: 0;
+						height: 40%;
+					}
+			.helper-2{
+				width: 17.5%;
+				height: 50%;
+				left: 38%;
+				top: 196px;
+				transform: rotate(270deg);
+				overflow: hidden;
+			}
+				.effect-brush{
+					animation-name: brush-moving;
+					animation-duration: 2s;
+					animation-fill-mode: forwards;
+					animation-delay: .4s;
+				}
+		}
 
 		&[letter="I"]
 			transform-origin: center center
