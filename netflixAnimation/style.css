@@ -142,7 +142,7 @@ body {
 				animation-fill-mode: forwards;
 				animation-delay: 1s;
 				.effect-brush{
-					animation-name: brush-moving
+					animation-name: brush-moving;
 					animation-duration: 2s;
 					animation-fill-mode: forwards;
 					animation-delay: .6s;
@@ -577,7 +577,7 @@ body {
 
 				.lamp-1{
 					--color: #ff0100;
-					z: 6;
+					z-index: 6;
 					left: 0.7%;
 					width: 1%;
 					animation-delay: (random(200) / 100) + s;
@@ -756,70 +756,78 @@ body {
 						left: percentage((random(200) / 100));
 						animation-delay: (random(200) / 100) + s;
 					}}
-				.lamp-21
-					--color: #ff00bf
-					left: 79.8%
-					width: 2%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
-				.lamp-22
-					--color: #04fd8f
-					left: 78.2%
-					width: 2%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
-				.lamp-23
-					--color: #01ffff
-					left: 78.5%
-					width: 2%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
-				.lamp-24
-					--color: #a201ff
-					left: 85.3%
-					width: 1.1%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
-				.lamp-25
-					--color: #ec0014
-					left: 86.9%
-					width: 1.1%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
-				.lamp-26
-					--color: #0078fe
-					left: 88.8%
-					width: 2%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
-				.lamp-27
-					--color: #ff0036
-					left: 92.4%
-					width: 2.4%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
-				.lamp-28
-					--color: #06f98c
-					left: 96.2%
-					width: 2.1%
-					animation-delay: (random(200) / 100) + s
-					&::before
-						left: percentage((random(200) / 100))
-						animation-delay: (random(200) / 100) + s
+				.lamp-21{
+					--color: #ff00bf;
+					left: 79.8%;
+					width: 2%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
+				.lamp-22{
+					--color: #04fd8f;
+					left: 78.2%;
+					width: 2%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
+				.lamp-23{
+					--color: #01ffff;
+					left: 78.5%;
+					width: 2%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
+				.lamp-24{
+					--color: #a201ff;
+					left: 85.3%;
+					width: 1.1%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
+				.lamp-25{
+					--color: #ec0014;
+					left: 86.9%;
+					width: 1.1%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
+				.lamp-26{
+					--color: #0078fe;
+					left: 88.8%;
+					width: 2%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
+				.lamp-27{
+					--color: #ff0036;
+					left: 92.4%;
+					width: 2.4%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
+				.lamp-28{
+					--color: #06f98c;
+					left: 96.2%;
+					width: 2.1%;
+					animation-delay: (random(200) / 100) + s;
+					&::before{
+						left: percentage((random(200) / 100));
+						animation-delay: (random(200) / 100) + s;
+					}}
 
 				.lamp-1,
 				.lamp-3,
@@ -834,13 +842,14 @@ body {
 				.lamp-21,
 				.lamp-23,
 				.lamp-25,
-				.lamp-27
-					animation-name: lumieres-moving-left
-					animation-duration: 5s
-					animation-fill-mode: forwards
-					&::before 
-						animation-name: lumieres-moving-left
-						animation-duration: 5.5s
+				.lamp-27{
+					animation-name: lumieres-moving-left;
+					animation-duration: 5s;
+					animation-fill-mode: forwards;
+					&::before {
+						animation-name: lumieres-moving-left;
+						animation-duration: 5.5s;
+					}}
 				 
 				.lamp-2,
 				.lamp-4,
@@ -855,13 +864,15 @@ body {
 				.lamp-22,
 				.lamp-24,
 				.lamp-26,
-				.lamp-28
-					animation-name: lumieres-moving-right
-					animation-duration: 5s
-					animation-fill-mode: forwards
-					&::before 
-						animation-name: lumieres-moving-right
-						animation-duration: 5.5s
+				.lamp-28{
+					animation-name: lumieres-moving-right;
+					animation-duration: 5s;
+					animation-fill-mode: forwards;
+					&::before {
+						animation-name: lumieres-moving-right;
+						animation-duration: 5.5s;
+					}}
+				}}
     }
 					
     @keyframes brush-moving {
@@ -938,4 +949,4 @@ body {
             background-color: rgba(0, 0, 0, 0);
         }
     }
-}
+}   
